@@ -1,7 +1,6 @@
 @import 'utility';
-
-$base-text-size: 16px;
-$base-font-family: sans-serif;
+@import 'navbar';
+@import 'home';
 
 html {
   @include full-height;
@@ -10,4 +9,42 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  background-color: $theme-color;
+  background-image: url('../images/overshot.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  background-color: darken($theme-color, 30%);
+  // height: 60px;
+  margin-top: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+main {
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  .Footer {
+    width: 800px;
+  }
+
+  p {
+    text-align: center;
+    color: #fff;
+  }
 }

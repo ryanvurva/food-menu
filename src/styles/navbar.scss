@@ -1,0 +1,89 @@
+@import 'utility';
+
+nav {
+  width: 800px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  // align-items: baseline;
+
+  .Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    a {
+      color: #fff;
+
+      span {
+        color: #f6590c;
+      }
+    }
+    h1 {
+      margin: 0;
+      color: #fff;
+      cursor: pointer;
+      font-size: 2em;
+      letter-spacing: 8px;
+    }
+
+    p {
+      display: flex;
+      align-items: baseline;
+      margin: 0 auto;
+      color: #fff;
+      font-variant: small-caps;
+    }
+  }
+
+  .Nav {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-top: 8px;
+
+    a {
+      font-size: 1.5em;
+      color: #fff;
+      text-decoration: none;
+      // margin-right: 1em;
+
+      &:hover {
+        color: #f6590c;
+        animation: jello-horizontal 0.9s both;
+
+          @keyframes jello-horizontal {
+            0% {
+              transform: scale3d(1, 1, 1);
+            }
+            30% {
+              transform: scale3d(1.25, 0.75, 1);
+            }
+            40% {
+              transform: scale3d(0.75, 1.25, 1);
+            }
+            50% {
+              transform: scale3d(1.15, 0.85, 1);
+            }
+            65% {
+              transform: scale3d(0.95, 1.05, 1);
+            }
+            75% {
+              transform: scale3d(1.05, 0.95, 1);
+            }
+            100% {
+              transform: scale3d(1, 1, 1);
+            }
+          }
+      }
+    }
+
+    div {
+      color: #fff;
+      margin: 0 2.5em;
+      font-size: .8em;
+    }
+  }
+}

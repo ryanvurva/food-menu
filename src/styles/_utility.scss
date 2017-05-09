@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-font-family: 'Oswald', sans-serif;
+$secondary-font-family: 'Open Sans Condensed', sans-serif;
+$theme-color: #607D8B;
 
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {
