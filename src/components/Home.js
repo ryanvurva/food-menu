@@ -15,12 +15,18 @@ class Home extends Component {
             </ul>
           </div>
         </div>
+        {/* <div><i className='fa fa-chevron-down' aria-hidden='true' /></div> */}
       </div>
+      <div className='seperator' />
       <div className='home-slide-1'>
-        <div />
+        <div>
+          <p>Braavos is the wealthiest and likely the most powerful of the Free Cities. It is located in a lagoon on the northwestern end of Essos, where the narrow sea and the Shivering Sea meet. Braavos is also known as Braavos of the Hundred Isles and the Secret City, a name also attributed to the city Nefer, the last remaining city of N'ghai. Additionally, Braavos is sometimes referred to as the bastard daughter of Valyria.</p>
+          <p>Bistro Braavos is the finest restaurant in all of the free city of Braavos.  Come and see for yourself.</p>
+        </div>
       </div>
-      <div className='home-slide-2'>
-        <div />
+      <div className='seperator' />
+      <div className='wow home-slide-2'>
+        <div className='background-slide-2' />
       </div>
     </div>
   }

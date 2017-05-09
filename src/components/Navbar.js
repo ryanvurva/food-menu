@@ -6,7 +6,7 @@ class Navbar extends Component {
     return <nav>
       <div className='Title'>
         <NavLink to='/'><h1>BIS<span>T</span>RO</h1></NavLink>
-        <p>-Bravos-</p>
+        <p>-Braavos-</p>
       </div>
       <div className='Nav'>
         <NavLink to='/menu' title='Menu'><i className='fa fa-book' aria-hidden='true' /></NavLink>

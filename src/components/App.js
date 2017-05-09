@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Navbar from './Navbar'
 import Home from './Home'
+import Menu from './Menu'
 // import Footer from './Footer'
 
 class App extends Component {
@@ -13,7 +14,10 @@ class App extends Component {
           <Navbar />
         </header>
         <main>
-          <Home />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/menu' component={Menu} />
+          </Switch>
         </main>
         <footer>
           {/* <Footer /> */}

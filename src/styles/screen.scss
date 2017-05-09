@@ -1,6 +1,7 @@
 @import 'utility';
 @import 'navbar';
 @import 'home';
+@import 'menu';
 
 html {
   @include full-height;
@@ -15,6 +16,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -25,10 +28,18 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 main {
-
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 footer {

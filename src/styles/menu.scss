@@ -1,0 +1,56 @@
+@import 'utility';
+
+.Menu {
+  margin-top: 80px;
+  background-color: hsla(0, 0%, 16%, 0.9);
+  border: thin dashed hsla(0, 0%, 47%, 0.9);
+  box-shadow: 6px 6px 12px black;
+  height: 90vh;
+  // min-height: 200px;
+  width: 90%;
+  max-width: 800px;
+  padding: .5em;
+
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 50px;
+  }
+
+  li {
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.Menu-2 {
+
+  h3 {
+    text-align: center;
+    color: #fff;
+  }
+
+  table {
+    th, td {
+      color: #fff;
+      border: thin dashed #ccc;
+      border-spacing: none;
+      border-collapse: collapse;
+      min-height: 76px;
+      padding: .5em;
+      margin: 0;
+    }
+  }
+}
