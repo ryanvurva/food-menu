@@ -42,8 +42,43 @@ main {
   margin: 0 auto;
 }
 
+.Contact {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 16%, 0.9);
+    border: thin dashed hsla(0, 0%, 47%, 0.9);
+    box-shadow: 6px 6px 12px black;
+    padding: 0 0 10px 10px;
+    margin: 20px;
+
+    h3 {
+      margin: 10px auto;
+      color: #fff;
+    }
+
+    .credentials, .contact-info, .guests {
+      display: flex;
+      justify-content: flex-start;
+      margin: 5px auto;
+
+      input {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -51,7 +86,7 @@ footer {
   justify-content: center;
 
   .Footer {
-    width: 800px;
+    width: 100%;
   }
 
   p {

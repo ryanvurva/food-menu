@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Specials from './Specials'
+
 class Home extends Component {
   render () {
     return <div className='Home'>
@@ -27,6 +29,7 @@ class Home extends Component {
       <div className='seperator' />
       <div className='wow home-slide-2'>
         <div className='background-slide-2' />
+        <Specials />
       </div>
     </div>
   }
