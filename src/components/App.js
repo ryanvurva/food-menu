@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import Home from './Home'
 import Menu from './Menu'
+import Contact from './Contact'
+import Locations from './Locations'
 // import Footer from './Footer'
 
 class App extends Component {
@@ -17,6 +19,8 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/menu' component={Menu} />
+            <Route path='/contact-us' component={Contact} />
+            <Route path='/locations' component={Locations} />
           </Switch>
         </main>
         <footer>
